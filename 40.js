@@ -9,18 +9,14 @@ const rateStudent = (array) => {
         if (number < 0 || number > 10) {
             console.log(`Nota ${number}: Inválida.`);
         } else {
-            if (number <= 4.9) {
+            if (number <= 4.9)
                 console.log(`Nota ${number}: Conceito D.`);
-            }
-            if (number >= 5 && number <= 6.9) {
+            else if (number >= 5 && number <= 6.9)
                 console.log(`Nota ${number}: Conceito C.`);
-            }
-            if (number >= 7 && number <= 8.9) {
+            else if (number >= 7 && number <= 8.9)
                 console.log(`Nota ${number}: Conceito B.`);
-            }
-            if (number >= 9 && number <= 10) {
+            else if (number >= 9 && number <= 10)
                 console.log(`Nota ${number}: Conceito A.`);
-            }
         }
     });
 }
