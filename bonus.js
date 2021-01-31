@@ -8,14 +8,13 @@ const smallestIntsArray = (array) => {
     const smallestIntegers = [];
     
     array.forEach((array) => {
-        let smallestOfArray = null;
-        // iterando por cada array dentro do array "pai"
-        array.forEach((num, index) => {
-            if (num === array[0])
-                smallestOfArray = num; // o 1 do array é o menor, até compara-lo com os outros
-            else if (num < array[index - 1] && num < smallestOfArray)
+        let smallestOfArray = array[0];
+
+        array.forEach((num) => {
+            if (num < smallestOfArray)
                 smallestOfArray = num;
         })
+
         smallestIntegers.push(smallestOfArray)
     })
     
@@ -24,13 +23,11 @@ const smallestIntsArray = (array) => {
 }
 
 const smallestIntArray = (array) => {
-    let smallestParentArray = array[0][0]; // menor do array "pai"
+    let smallestParentArray = array[0][0];
 
     array.forEach((array) => {
-        // iterando por cada array dentro do array "pai"
         array.forEach((num, index) => {
-            if (num === array[0]) {}
-            else if (num < array[index - 1] && num < smallestParentArray)
+            if (num < smallestParentArray)
                 smallestParentArray = num;
         })
     })
