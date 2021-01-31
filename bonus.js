@@ -1,4 +1,6 @@
 /*
+ * Obs: este exercício não existe no curso, foi elaborado por mim
+ *
  * Escreva duas funções que leia um array que contenha arrays de inteiros, 
  * e retorne um array com os menores inteiros de cada um, e a outra
  * retorne uma variável com o menor inteiro entre todos os arrays.
