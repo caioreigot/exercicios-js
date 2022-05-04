@@ -1,9 +1,12 @@
 /*
  * Obs: este exercício não existe no curso, foi elaborado por mim
  *
- * Escreva duas funções que leia um array que contenha arrays de inteiros, 
- * e retorne um array com os menores inteiros de cada um, e a outra
- * retorne uma variável com o menor inteiro entre todos os arrays.
+ * Escreva duas funções que recebam um array de arrays, que contenham números.
+ * A primeira função deve retornar apenas um array com os menores números entre os arrays do array passado como parâmetro
+ * Exemplo => Entrada: [ [1, 2], [3, 4] ] Saída: [ 1, 3 ]
+ * 
+ * A outra função deve retornar um único número, sendo o menor número entre todos os arrays do array passado como parâmetro
+ * Exemplo => Entrada: [ [5, 3], [2, 4] ] Saída: 2
 */
 
 const smallestIntsArray = (array) => {
